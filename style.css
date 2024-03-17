@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+    font-family: 'Roboto', sans-serif;
+}
+/* ------------------------------------Header ---------------------------------------*/
+section{
+    overflow: hidden;
+}
+header{
+    z-index: 1000;
+    top: 0;
+    background-color: #FFFFFF;
+}
+.userHelp{
+    height: 10vh;
+    background-color: #3FBBC0;
+    display: flex;
+    /* align-items: center; */
+}
+
+.info-2{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: 2px;
+}
+.dropend:hover >.dropdown-menu {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 100%;
+    margin-top: 10px;
+    margin-right: 2px;
+}
+.makeBtn{
+    background-color: #3FBBC0;
+    border-radius: 5px;
+    height: 45px;
+    width: 200px;
+    margin-left: 80px !important;.
+}
+.makeBtn a{
+    color: #FFFFFF;
+    font-family:'Roboto', sans-serif;
+}
+.makeBtn:hover{
+    background-color: #65c9cd;
+}
+.makeBtn:hover a{
+    color: #ffffff;
+}
+.nav-link{
+    font-weight: bold !important;
+}
+.nav-link:hover{
+    color: #3fbbc0 !important;
+}
+.nav-link.active{
+    color: #3FBBC0 !important;
+}
+.navLinks{
+    background-color: #ffffff !important;
+}
+/* -----------------------------------HeroSection----------------------------------------- */
+.carousel-caption{
+    background-color: #FFFFFF;
+    /* margin-bottom: 300px; */
+}
+.carousel-item{
+    height: auto;
+}
+.carousel-item img{
+    height: 490px;
+}
+/* .carousel-indicators{
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50% !important;
+    color: red !important;
+} */
+
+
+.readLink{
+    background-color: #3FBBC0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.readLink:hover{
+    background-color: #52c2c6;
+    color: #FFFFFF;
+}
+.carousel-caption{
+    margin-bottom: 50px;
+    border-top: 3px solid #3FBBC0;
+}
+.heroPara{
+    color: #3FBBC0;
+    font-weight: lighter;
+}
+/* ----------------------------------------------------------------------------------------- */
+/* -------------------------------information Section--------------------------------------- */
+.cardContainer{
+   padding: 30px 30px 15px 25px;
+}
+.cardContainer i{
+    font-size: 45px;
+    color: #3FBBC0;
+}
+.infoFirst{
+    font-size: 17px;
+}
+
+.cardContainer:hover i{
+    color: #FFFFFF;
+}
+.informationSection .card:hover p{
+    color: #FFFFFF;
+}
+.informationSection .card{
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s ease-in-out;
+    z-index: 1;
+}
+.informationSection .card::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #3FBBC0, #3FBBC0);
+    transition: top 0.3s ease-in-out;
+    z-index: -1;
+  }
+  
+ .informationSection .card:hover::before {
+    top: 0;
+  }
+  .informationSection .card:hover::before .cardContainer:hover i{
+    color: #FFFFFF;
+  }
+/* ----------------------------------------------------------------------------------------- */
+.helpSection{
+    background-color: #3FBBC0;
+    color: #FFFFFF;
+}
+.appointmentBtn{
+    border-radius: 50px;
+    background-color: #3FBBC0;
+    border: 2px solid #ffffff;
+    padding: 15px 25px;
+}
+.appointmentBtn a{
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.appointmentBtn:hover{
+    background-color: #FFFFFF;
+}
+.appointmentBtn:hover a{
+    color: #3FBBC0;
+}
+/* --------------------------------About Section------------------------------------ */
+.aboutHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0 20px !important;
+    text-align: center;
+}
+.aboutHeader h2{
+    color: #444444;
+}
+.aboutHeader p{
+    color: #736657;
+}
+.aboutGap{
+    background-color: #3FBBC0;
+    height: 3px;
+    width: 50px;
+}
+.aboutPic img{
+    max-width: 100%;
+}
+.aboutImp{
+    display: flex;
+    margin: 0 0 6px;
+    align-items: center;
+}
+.aboutDetail p{
+    color: #736657;
+}
+.aboutImp i{
+    margin-right: 10px;
+    margin-top: 4px;
+    color: #3FBBC0;
+    font-size: 15px;
+}
+.italicFont{
+    font-style: italic;
+}
+.abtImp{
+    align-items: normal;
+}
+.aboutCard .card{
+    margin-bottom: 10px;
+}
+.aboutCard .card p{
+    margin: 0;
+}
+.aboutCard .card i{
+    color: #3FBBC0;
+    font-size: 40px;
+    margin-right: 20px;
+}
+.cardAbout{
+    padding: 15px;
+}
+.cardAboutAchive strong{
+    font-size: 44px;
+}
+.cardAboutAchive{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.cardAboutMoreDetails p{
+    color: #736657;
+    font-size: 15px;
+}
+.cardAboutMoreDetails a{
+    
+    padding: 5px;
+    color: #3FBBC0;
+    font-size: 15px;
+}
+.cardAboutMoreDetails a:hover{
+    background-color: #3FBBC0;
+    color: #FFFFFF;
+}
+.aboutCardHeight{
+    height: 230px !important;
+}
+.aboutCardRow{
+    margin-bottom: 50px;
+}
+.feactureImg{
+    max-width: 100%;
+}
+.featureData i{
+    color: #3FBBC0;
+    font-size: 50px;
+}
+.featureList strong{
+    font-size: 20px;
+    color: #444444;
+}
+.featureList p{
+    color: #3FBBC0;
+}
+/* ---------------------------------------------------------------------------*/
+/* ---------------------------------Service Section--------------------------- */
+.serviceSection{
+    margin-bottom: 50px;
+}
+.serviceHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0 20px !important;
+    text-align: center;
+}
+.serviceHeader h2{
+    color: #444444;
+}
+.serviceHeader p{
+    color: #736657;
+}
+.serviceGap{
+    background-color: #3FBBC0;
+    height: 3px;
+    width: 50px;
+}
+.serviceLogo{
+    background-color: #FFFFFF;
+    height: 70px;
+    width: 70px;
+    font-size: 40px;
+    color: #3FBBC0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.serviceBorder{
+    background-color: #3FBBC0 ;
+    height: 3px;
+    width: 50px;
+    margin: 10px 0;
+}
+.serviceSection input{
+    border: 1px solid #3FBBC0;
+   padding: 10px 10px;
+}
+.serviceSection .listData select{
+    padding: 10px 10px;
+    border: 1px solid #3FBBC0;
+    color: #3FBBC0;
+}
+.apn-2{
+    letter-spacing: 1px;
+    border: none;
+    background-color: #3FBBC0;
+    color: #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.apn-2:hover{
+    background-color: #52c2c6;
+}
+/* --------------------------------------------------------------------------- */
+/* ------------------------------------------Department Section------------------ */
+
+.departmentSection{
+    margin-bottom: 50px;
+}
+.nav-pills .nav-link, .nav-pills .show>.nav-link{
+    background-color: #FFFFFF !important;
+    color: #444444 !important;
+    font-size: 20px;
+    display: flex !important;
+    flex-direction: column;
+    border-radius: none !important;
+    font-family: 'Roboto', sans-serif !important;
+    text-align: start;
+    margin-bottom: 20px;
+    width: 100% !important;
+    margin: 0 !important;
+    /* padding: 0 !important; */
+}
+
+.nav-pills .nav-link.nav-link.active, .nav-pills .show>.nav-link{
+    border-left: 5px solid #3FBBC0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+    /* padding: 0 !important; */
+}
+.nav-pills .nav-link{
+    border-radius: 0 !important;
+}
+.nav-pills .nav-link:hover{
+    border-left-color: #e9ecef;
+}
+.btnPara{
+    color: #736657;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+}
+.btnPara p{
+    text-align: start;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    /* width: 90%; */
+}
+.cardiologyClass p{
+    color: #3FBBC0;
+}
+.cardiologyClass strong{
+    font-size: 25px;
+}
+/* ------------------------------TESTMONITAL----------------------------------- */
+.testimonialSection{
+    margin-bottom: 50px;
+}
+.carousel-indicators button{
+    background-color: #000000 !important;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: none !important;
+}
+
+.testimonialDataImg
+{
+    position: relative;
+    bottom: 50px;
+    left: 25px
+}
+.testimonialDataImg img{
+    height: 100px;
+    border-radius: 50%;
+    border-color: #FFFFFF;
+
+}
+.testimonialDataPara{
+    background-color: #f0fafa;
+    color: #444444;
+    padding: 20px 30px 60px;
+    font-style: italic;
+}
+.role{
+    font-size: 13px;
+    font-weight: bold;
+    color: #3FBBC0;
+}
+.testimonialData i{
+    color: #3FBBC0;
+    font-size: 25px;
+}
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------------Docter Section--------------------- */
+.DocterSection{
+    margin-bottom: 100px;
+}
+.docterName{
+    color: #444444;
+}
+.docterRole{
+    color: #3FBBC0;
+    font-size: 13px;
+}
+.docterMedia{
+    background-color: #ffffff7f;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+    bottom: 82px;
+    display: none;
+}
+.doctersImg:hover .docterMedia{
+    display: flex;
+}
+.docterMedia a{
+    text-decoration: none;
+}
+.docterMedia i{
+    font-size: 20px;
+    color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.docterMedia li{
+    list-style-type: none;
+}
+/* ----------------------------------------Pricing Section--------------------- */
+.pricingSection{
+    margin-bottom: 50px;
+}
+.pricingSection .card p{
+    text-align: center;
+} 
+.pricingSection .card{
+    border-radius: 10px;
+}
+.PrincingPrice{
+    background-color: #f8f8f8;
+    font-weight: bold;
+    font-size: 18px;
+    color: #736657;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px ;
+}
+.month{
+    color: #3FBBC0;
+    font-size: 35px;
+    font-weight: bold;
+}
+.month sub{
+    font-weight: lighter;
+    color: #c7c5c4;
+    font-size: 20px;
+}
+.pricingSection .card del{
+    color: #e7c5e4;
+}
+.buyNowBtn{
+    background-color: #3FBBC0;
+    padding: 5px 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.buyNowBtn:hover{
+    background-color: #52c2c6;
+    color: #FFFFFF;
+}
+.businessBg{
+    background-color: #3FBBC0;
+    color: #FFFFFF;
+}
+
+/* -------------------------------------Question Section-------------------- */
+.accordion-button:not(.collapsed)
+{
+    color: #444444 !important;
+    background-color: #FFFFFF !important;
+}
+.accordion-button:hover{
+    color: #3FBBC0;
+}
+.accordion-item{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+/* -------------------------------------------------------------------------- */
+/* -----------------------------Contact Section------------------------------ */
+.contactSection{
+    margin-bottom: 50px;
+}
+.contactLocation {
+    text-align: center;
+    color: #736657;
+    margin-bottom: 30px;
+}
+.contactLocation p{
+    font-weight: lighter;
+    font-size: 13px;
+    margin: 0;
+    line-height: 26px;
+}
+.contactLocation strong{
+    color: #736657;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contactMailAndCall{
+    text-align: center;
+}
+.contactLocation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactIcon{
+    margin-top: 10px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #3FBBC0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: dotted;
+    border-radius: 50%;
+}
+.contactIcon i{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    margin: 0;
+}
+.sendMessage button{
+    background-color: #3FBBC0;
+    border: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 5px;
+}
+.sendMessage button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.sendMessage button:hover button{
+    background-color: #65c9cd;
+}
+/* ----------------------------------------------Footer Section------------------------- */
+footer{
+    background-color: #f6f6f6;
+   
+}
+.useLinks{
+    display: flex;
+}
+.copyRights{
+    background-color: #eeeeee;
+    text-align: center;
+}
+footer strong{
+    color: #444444;
+}
+.footerAddresss p{
+    font-size: 14px;
+    color: #736657;
+}
+.footerMedia li{
+    list-style-type: none;
+    margin-right: 10px;
+}
+.footerMedia a{
+    background-color: #3FBBC0;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.footerMedia i{
+    text-decoration: none;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.useLinks p{
+    margin: 0;
+    margin-left: 10px;
+    color: #736657;
+}
+.useLinks{
+    margin-bottom: 15px;
+}
+
+.useLinks i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: #3FBBC0;
+}
+.ourLetter{
+    color: #736657;
+}
+.ourLetter button{
+    background-color: #3FBBC0;
+    padding: 10px 20px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.ourLetter button a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.copyRights{
+    padding: 10px 0;
+}
+/* ---------------------------------------------------------------------------*/
